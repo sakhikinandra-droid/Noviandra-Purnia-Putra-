@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sania ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff9ecf,#ffe6f2,#fff);
+overflow-x:hidden;
+color:#fff;
+text-align:center;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+position:relative;
+}
+
+h1{
+font-size:3rem;
+text-shadow:0 0 20px rgba(255,255,255,.8);
+animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{transform:scale(1);}
+to{transform:scale(1.05);}
+}
+
+.subtitle{
+margin-top:15px;
+font-size:1.2rem;
+max-width:700px;
+}
+
+.card{
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(10px);
+padding:25px;
+margin:20px auto;
+width:90%;
+max-width:800px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-top:20px;
+}
+
+.gallery img{
+width:250px;
+height:320px;
+object-fit:cover;
+border-radius:20px;
+border:4px solid white;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.message{
+font-size:1.1rem;
+line-height:1.8;
+text-align:left;
+white-space:pre-line;
+}
+
+.btn{
+margin-top:20px;
+padding:15px 35px;
+border:none;
+border-radius:30px;
+background:#ff4f9f;
+color:white;
+font-size:1rem;
+cursor:pointer;
+}
+
+.secret{
+display:none;
+margin-top:20px;
+animation:fade 1s;
+}
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+.heart{
+position:fixed;
+top:-10px;
+color:#ff4f9f;
+font-size:20px;
+animation:fall linear forwards;
+pointer-events:none;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+
+footer{
+padding:40px;
+font-size:1rem;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+<h1>🎂 Happy 18th Birthday 🎂</h1>
+<h1>Sania Putri Damayanti ❤️</h1>
+
+<p class="subtitle">
+Semoga semua kebahagiaan, cinta, dan impian terbaik selalu menyertaimu.
+Hari ini adalah hari spesial untuk seseorang yang sangat spesial.
+</p>
+</section>
+
+<div class="card">
+<h2>📸 Galeri Sania</h2>
+
+<div class="gallery">
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+</div>
+</div>
+
+<div class="card">
+<h2>💌 Pesan Untuk Sania</h2>
+
+<div class="message">
+HBD saniiii 🎉
+
+Yeyyy udaa 18 taun ajaa 🥳
+
+Bentar lagi bikin NPWP, SKCK trs kerjaa 😆
+
+Yahh aku mah nanti nyusul ajaa dehh, ehehehe 🤭
+
+Semoga impian kamu tercapai, semua cita-cita yang kamu inginkan bisa terwujud satu per satu.
+
+Semoga selalu sehat, bahagia, dan dikelilingi orang-orang baik yang sayang sama kamu.
+
+Tetap jadi Sania yang kuat, baik hati, dan selalu membawa senyum untuk orang-orang di sekitarmu.
+
+✨ Jangan pernah berhenti bermimpi.
+
+❤️ Lop youu ❤️
+</div>
+
+<button class="btn" onclick="showSecret()">
+Buka Pesan Rahasia ❤️
+</button>
+
+<div class="secret" id="secret">
+<h2>🌹 Pesan Rahasia 🌹</h2>
+
+<p style="margin-top:15px;">
+Di antara banyaknya hari yang berlalu,
+hari ini adalah salah satu hari terindah karena dunia pernah menghadirkan seseorang bernama
+<b>Sania Putri Damayanti</b>.
+
+Semoga senyummu selalu menjadi alasan bahagia,
+dan semoga setiap langkahmu membawa keberuntungan.
+
+Happy Birthday ❤️
+</p>
+</div>
+</div>
+
+<footer>
+✨ Made With Love For Sania Putri Damayanti ✨
+</footer>
+
+<script>
+function showSecret(){
+document.getElementById("secret").style.display="block";
+}
+
+function createHeart(){
+const heart=document.createElement("div");
+heart.classList.add("heart");
+heart.innerHTML="❤";
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(15+Math.random()*30)+"px";
+heart.style.animationDuration=(4+Math.random()*4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
+}
+
+setInterval(createHeart,250);
+</script>
+
+</body>
+</html>
