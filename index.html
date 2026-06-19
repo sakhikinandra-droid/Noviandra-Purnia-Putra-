@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sania ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ffd6e7,#ffeef5,#fff8fb);
+color:#222;
+overflow-x:hidden;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+}
+
+.hero h1{
+font-size:3.5rem;
+color:#c2185b;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:1.5rem;
+font-weight:500;
+color:#555;
+}
+
+.hero p{
+max-width:750px;
+font-size:1.15rem;
+line-height:1.9;
+color:#444;
+margin-top:20px;
+}
+
+.card{
+width:90%;
+max-width:1100px;
+margin:30px auto;
+padding:35px;
+background:rgba(255,255,255,.95);
+border-radius:30px;
+box-shadow:0 10px 30px rgba(194,24,91,.15);
+}
+
+.card h2{
+text-align:center;
+color:#c2185b;
+margin-bottom:20px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:450px;
+object-fit:cover;
+border-radius:25px;
+border:5px solid white;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+.message{
+font-size:1.1rem;
+line-height:2;
+color:#222;
+white-space:pre-line;
+}
+
+footer{
+text-align:center;
+padding:40px;
+font-size:1.2rem;
+font-weight:600;
+color:#c2185b;
+}
+
+.heart{
+position:fixed;
+top:-10px;
+color:#ff4d94;
+pointer-events:none;
+animation:fall linear forwards;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<h1>🎂 Happy Birthday 🎂</h1>
+
+<h1>Sania Putri Damayanti ❤️</h1>
+
+<h2>Selamat Ulang Tahun Ke-18</h2>
+
+<p>
+Semoga hari spesial ini menjadi awal dari kebahagiaan,
+kesuksesan, dan semua impian indah yang sedang kamu perjuangkan.
+</p>
+
+</section>
+
+<div class="card">
+
+<h2>📸 Beautiful Memories Of Sania ❤️</h2>
+
+<div class="gallery">
+
+<img src="foto1.jpg" alt="Foto 1">
+
+<img src="foto2.jpg" alt="Foto 2">
+
+<img src="foto3.jpg" alt="Foto 3">
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>💌 Pesan Untuk Sania</h2>
+
+<div class="message">
+
+🎂 Happy Birthday Sania Putri Damayanti 🎂
+
+HBD saniiii 🥳❤️
+
+Yeyyy, akhirnya udaa 18 taun ajaa.
+
+Gak kerasa yaa waktu berjalan cepet banget.
+
+Bentar lagi bikin NPWP, SKCK, terus kerjaa 😆
+
+Yahh aku mah nanti nyusul ajaa dehh, ehehehe 🤭
+
+Di umur yang baru ini aku doain semoga semua impian, harapan, dan cita-cita yang selama ini kamu perjuangkan bisa tercapai satu per satu.
+
+Semoga selalu diberikan kesehatan, kebahagiaan, rezeki yang lancar, dan dikelilingi oleh orang-orang baik yang sayang sama kamu.
+
+Terima kasih karena sudah menjadi pribadi yang kuat, baik, dan hebat sampai hari ini.
+
+Tetap jadi Sania yang ceria, yang selalu membawa senyuman untuk orang-orang di sekitarnya.
+
+Kalau suatu saat kamu merasa lelah, jangan lupa bahwa kamu sudah sejauh ini dan sudah melakukan yang terbaik.
+
+Nikmati hari spesialmu, tersenyumlah lebih banyak hari ini, dan jangan lupa bahagia.
+
+❤️ Selamat Ulang Tahun Ke-18, Sania Putri Damayanti ❤️
+
+Lop youu ❤️
+
+</div>
+
+</div>
+
+<footer>
+❤️ Selamat Ulang Tahun Ke-18 Sania Putri Damayanti ❤️
+</footer>
+
+<script>
+
+function createHeart(){
+
+const heart=document.createElement('div');
+
+heart.classList.add('heart');
+
+heart.innerHTML='❤️';
+
+heart.style.left=Math.random()*100+'vw';
+heart.style.fontSize=(15+Math.random()*30)+'px';
+heart.style.animationDuration=(4+Math.random()*4)+'s';
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
+
+}
+
+setInterval(createHeart,250);
+
+</script>
+
+</body>
+</html>
